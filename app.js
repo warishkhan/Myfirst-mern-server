@@ -10,7 +10,7 @@ require('./database/conn')
 app.use(express.json());
 app.use(require('./router/auth'));
 
-const port = process.env.PORT;
+const port = process.env.PORT || 5000;
 
 app.get('/',(req,res)=>{
     res.send('hello I m the best in the world');
